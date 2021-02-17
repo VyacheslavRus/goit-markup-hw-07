@@ -72,8 +72,12 @@ footer {
   margin-bottom: 20px;
 }
 
-.networks-list li:not(:last-child) {
-  margin-right: 10px;
+.networks-list {
+  li {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
 }
 
 .networks-list {
@@ -91,12 +95,20 @@ footer {
   transition: 250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.networks-list li:hover {
-  background-color: #2196f3;
+.networks-list {
+  li {
+    &:hover {
+      background-color: #2196f3;
+    }
+  }
 }
 
-.networks-list a:focus {
-  background-color: #2196f3;
+.networks-list {
+  a {
+    &:focus {
+      background-color: #2196f3;
+    }
+  }
 }
 
 .networks-list a {

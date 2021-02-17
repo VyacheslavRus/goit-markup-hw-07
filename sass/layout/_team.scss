@@ -63,8 +63,12 @@
   transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.person-networks li:not(:last-child) {
-  margin-right: 10px;
+.person-networks {
+  li {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
 }
 
 .linkedin:hover,

@@ -98,16 +98,24 @@
   transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-  outline: none;
+.site-nav {
+  link {
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      outline: none;
+    }
+  }
 }
 
-.connection-link .link:hover,
-.connection-link .link:focus {
-  color: var(--accent-color);
-  outline: none;
+.connection-link {
+  .link {
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      outline: none;
+    }
+  }
 }
 
 .site-nav .link.current {
