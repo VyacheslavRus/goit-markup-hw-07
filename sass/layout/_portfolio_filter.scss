@@ -29,14 +29,18 @@
   margin-left: 8px;
 }
 
-.button-item:first-child {
-  margin-left: 0;
+.button-item {
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
-.button-text:hover,
-.button-text:focus {
-  color: #ffffff;
-  background-color: var(--accent-color);
+.button-text {
+  &:focus,
+  &:hover {
+    color: #ffffff;
+    background-color: var(--accent-color);
+  }
 }
 
 .button-list {

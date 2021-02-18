@@ -101,9 +101,11 @@ label {
   color: #757575;
 }
 
-label:first-child {
-  padding-top: 12px;
-  padding-bottom: 4px;
+label {
+  &:first-child {
+    padding-top: 12px;
+    padding-bottom: 4px;
+  }
 }
 
 .input-box .input-style {
@@ -129,16 +131,24 @@ label:first-child {
   transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-style:focus {
-  border-color: var(--accent-color);
+.input-style {
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
-.input-style:focus + svg {
-  fill: var(--accent-color);
+.input-style {
+  &:focus {
+    + svg {
+      fill: var(--accent-color);
+    }
+  }
 }
 
-textarea:focus {
-  border-color: var(--accent-color);
+textarea {
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
 textarea {
@@ -159,25 +169,40 @@ textarea {
   position: relative;
   padding-left: 25px;
 }
-.check-label:before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 15px;
-  border: 2px solid black;
-  border-radius: 2px;
-  left: 0;
+
+.check-label {
+  &:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 2px;
+    left: 0;
+  }
 }
 
-.check:checked + .check-label:before {
-  background-color: var(--accent-color);
-  background-image: url("../images/icon3/mark.svg");
-  border-color: var(--accent-color);
-  background-repeat: no-repeat;
+.check {
+  &:checked {
+    + .check-label {
+      &:before {
+        background-color: var(--accent-color);
+        background-image: url("../images/icon3/mark.svg");
+        border-color: var(--accent-color);
+        background-repeat: no-repeat;
+      }
+    }
+  }
 }
 
-.check:focus + .check-label:before {
-  border-color: var(--accent-color);
+.check {
+  &:focus {
+    + .check-label {
+      &:before {
+        border-color: var(--accent-color);
+      }
+    }
+  }
 }
 
 .send-form {

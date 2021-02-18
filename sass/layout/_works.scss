@@ -24,8 +24,10 @@
   position: relative;
 }
 
-.work-item:not(:first-child) {
-  margin-left: 30px;
+.work-item {
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
 .work-item-subtitle {

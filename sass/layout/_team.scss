@@ -18,8 +18,10 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.list-item:not(:first-child) {
-  margin-left: 30px;
+.list-item {
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
 .section-title-team {
@@ -71,32 +73,44 @@
   }
 }
 
-.linkedin:hover,
-.facebook:hover,
-.twitter:hover,
-.instagram:hover {
-  background-color: #2196f3;
+.linkedin,
+.facebook,
+.twitter,
+.instagram {
+  &:hover {
+    background-color: #2196f3;
+  }
 }
 
-.linkedin:focus,
-.facebook:focus,
-.twitter:focus,
-.instagram:focus {
-  background-color: #2196f3;
+.linkedin,
+.facebook,
+.twitter,
+.instagram {
+  &:focus {
+    background-color: #2196f3;
+  }
 }
 
-.linkedin:hover svg,
-.facebook:hover svg,
-.twitter:hover svg,
-.instagram:hover svg {
-  fill: #ffffff;
+.linkedin,
+.facebook,
+.twitter,
+.instagram {
+  &:hover {
+    svg {
+      fill: #ffffff;
+    }
+  }
 }
 
-.linkedin:focus svg,
-.facebook:focus svg,
-.twitter:focus svg,
-.instagram:focus svg {
-  fill: #ffffff;
+.linkedin,
+.facebook,
+.twitter,
+.instagram {
+  &:focus {
+    svg {
+      fill: #ffffff;
+    }
+  }
 }
 
 .linkedin,

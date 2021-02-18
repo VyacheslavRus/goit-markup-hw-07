@@ -84,8 +84,12 @@
   background: rgba(33, 150, 243, 0.9);
 }
 
-.projects-link:focus .overlay-text,
-.projects-link:hover .overlay-text {
-  opacity: 1;
-  top: 0%;
+.projects-link {
+  &:focus,
+  &:hover {
+    .overlay-text {
+      opacity: 1;
+      top: 0%;
+    }
+  }
 }

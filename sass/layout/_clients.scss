@@ -70,38 +70,50 @@
   transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-build:hover,
-.icon-brand:hover,
-.foster-peters:hover,
-.company-fruits:hover,
-.company-tagline:hover,
-.ya-and-co:hover {
-  border-color: #2196f3;
+.icon-build,
+.icon-brand,
+.foster-peters,
+.company-fruits,
+.company-tagline,
+.ya-and-co {
+  &:hover {
+    border-color: #2196f3;
+  }
 }
 
-.icon-build:focus,
-.icon-brand:focus,
-.foster-peters:focus,
-.company-fruits:focus,
-.company-tagline:focus,
-.ya-and-co:focus {
-  border-color: #2196f3;
+.icon-build,
+.icon-brand,
+.foster-peters,
+.company-fruits,
+.company-tagline,
+.ya-and-co {
+  &:focus {
+    border-color: #2196f3;
+  }
 }
 
-.icon-build:hover svg,
-.icon-brand:hover svg,
-.foster-peters:hover svg,
-.company-fruits:hover svg,
-.company-tagline:hover svg,
-.ya-and-co:hover svg {
-  fill: #2196f3;
+.icon-build,
+.icon-brand,
+.foster-peters,
+.company-fruits,
+.company-tagline,
+.ya-and-co {
+  &:hover {
+    svg {
+      fill: #2196f3;
+    }
+  }
 }
 
-.icon-build:focus svg,
-.icon-brand:focus svg,
-.foster-peters:focus svg,
-.company-fruits:focus svg,
-.company-tagline:focus svg,
-.ya-and-co:focus svg {
-  fill: #2196f3;
+.icon-build,
+.icon-brand,
+.foster-peters,
+.company-fruits,
+.company-tagline,
+.ya-and-co {
+  &:focus {
+    svg {
+      fill: #2196f3;
+    }
+  }
 }

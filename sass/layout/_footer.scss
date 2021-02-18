@@ -36,8 +36,13 @@ footer {
   font-size: 14px;
   line-height: 1.7;
 }
-.address li:not(:last-child) {
-  margin-bottom: 9px;
+
+.address {
+  li {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
 }
 
 .address-link-text {
@@ -54,9 +59,11 @@ footer {
   transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address-link:hover,
-.address-link:focus {
-  color: var(--accent-color);
+.address-link {
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 /* Часть с networks */
